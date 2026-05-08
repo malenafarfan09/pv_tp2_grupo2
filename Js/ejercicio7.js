@@ -1,3 +1,8 @@
+/**
+ * TRABAJO PRÁCTICO N°2 - EJERCICIO 7
+ * Consigna:  Declarar un array denominado nombres con al menos 6 nombres.
+Mostrar los nombres del array y obtener el nombre más largo del array nombres.
+ */
 const nombres = ["Santiago", "Tati", "Nico", "Danna", "Martin", "Lautaro"];
 
 const obtenerNombreMasLargo = (listaNombres) => {
