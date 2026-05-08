@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9 - Bienvenida</title>
+</head>
+<body>
+
+    <h1>Práctico de Programación Visual</h1>
+
+    <script>
+        // EL CÓDIGO VA AQUÍ ADENTRO
+        const saludarUsuario = () => {
+            const apellido = prompt("Ingrese su apellido:");
+            const nombre = prompt("Ingrese su nombre:");
+            // Se usa template strings como pide la consigna
+            document.write(`<h1>¡Hola ${nombre} ${apellido}. Bienvenido a Programación Visual!</h1>`);
+        };
+
+        saludarUsuario();
+    </script>
+
+</body>
+</html>
