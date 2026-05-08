@@ -10,4 +10,4 @@
 * **RIOS CARLOS DANA EUGENIA** (dannacarlos)
 
 ## Descripción
-Primera parte del segundo trabajo prectivo enfocado en Java Scripts
+Primera parte del segundo trabajo practico enfocado en Java Scripts
