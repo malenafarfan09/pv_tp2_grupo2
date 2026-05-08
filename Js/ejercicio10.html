@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10 - Promedio Iterativo</title>
+</head>
+<body>
+
+    <h1>Cálculo de Promedio</h1>
+
+    <script>
+        const calcularPromedioIterativo = () => {
+            const cantidad = parseInt(prompt("¿Cuántos números desea ingresar?"));
+            const numeros = [];
+            let suma = 0;
+
+            for (let i = 0; i < cantidad; i++) {
+                let num = parseInt(prompt(`Ingrese el número entero ${i + 1} de ${cantidad}:`));
+                
+                numeros.push(num);
+                
+                suma += num;
+            }
+
+            const promedio = suma / cantidad;
+          
+            document.write(`<p><strong>Números ingresados:</strong> ${numeros.join(", ")}</p>`);
+            document.write(`<p><strong>El promedio es:</strong> ${promedio.toFixed(2)}</p>`);
+        };
+
+        calcularPromedioIterativo();
+    </script>
+
+</body>
+</html>
