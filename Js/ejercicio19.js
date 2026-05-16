@@ -1,5 +1,5 @@
 
-import { obtenerNuevoTexto } from './funciones19.js';
+import { obtenerNuevoTexto } from 'funciones19.js';
 
 document.getElementById('btnCambiar').addEventListener('click', () => {
     
