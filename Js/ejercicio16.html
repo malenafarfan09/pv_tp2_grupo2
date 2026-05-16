@@ -1,0 +1,58 @@
+<!-- 
+  TRABAJO PRÁCTICO N°2 - EJERCICIO 9
+  Consigna:Escribir una función llamada sumarRango que reciba dos argumentos numéricos
+enteros: número inicial y número final. La función debe retornar la suma de los números
+en ese rango (incluyéndolos).
+El número inicial debe ser menor o igual que el número final
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 16 - Sumar Rango</title>
+</head>
+<body>
+
+    <h1>Práctico de Programación Visual - Ejercicio 16</h1>
+    <div id="resultado"></div>
+
+    <script>
+        
+        const sumarRango = (inicio, fin) => {
+            let suma = 0; 
+
+           
+            for (let i = inicio; i <= fin; i++) {
+                suma += i; 
+            }
+
+            return suma; 
+        };
+
+        
+        const numInicial = parseInt(prompt("Ingrese el número inicial (menor o igual al final):"));
+        const numFinal = parseInt(prompt("Ingrese el número final:"));
+
+       
+        if (numInicial <= numFinal) {
+            
+            
+            const resultadoSuma = sumarRango(numInicial, numFinal);
+
+            
+            document.getElementById("resultado").innerHTML = `
+                <p><strong>Número inicial:</strong> ${numInicial}</p>
+                <p><strong>Número final:</strong> ${numFinal}</p>
+                <h2>La suma de todos los números en ese rango es: ${resultadoSuma}</h2>
+            `;
+
+        } else {
+      
+            document.getElementById("resultado").innerHTML = `
+                <h2 style="color: red;">Error: El número inicial debe ser menor o igual que el número final.</h2>
+            `;
+        }
+    </script>
+
+</body>
+</html>
