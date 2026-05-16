@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio.14 - Duplicar Arreglo</title>
+</head>
+<body>
+
+    <h1>Duplicador de Números</h1>
+
+    <script>
+        // 1. Función que recibe el arreglo y retorna uno nuevo
+        const duplicar = (a) => {
+            const nuevoArreglo = [];
+            
+            a.forEach((num) => {
+                nuevoArreglo.push(num * 2); 
+            });
+
+            return nuevoArreglo;
+        }
+
+        // 2. Lógica de carga 
+        const iniciarPrograma = () => {
+            const cant = parseInt(prompt("¿Cuántos números desea ingresar?"));
+            const listaO = [];
+
+            for (let i = 0; i < cant; i++) {
+                let numero = parseInt(prompt(`Ingrese el número ${i + 1} de ${cant}:`));
+                listaOriginal.push(numero);
+            }
+
+            // Llamamos a la función y guardamos el resultado
+            const listaD = duplicar(listaOriginal);
+
+            document.write(`<p><strong>Arreglo Original:</strong> ${listaOriginal.join(", ")}</p>`);
+            document.write(`<p><strong>Arreglo Duplicado:</strong> ${listaDuplicada.join(", ")}</p>`);
+        };
+
+        iniciarPrograma();
+    </script>
+
+</body>
+</html>
