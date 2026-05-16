@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio.12 - Par o Impar</title>
+    </head>
+    <body>
+        <h1>Calculos de Números pares e impares</h1>
+        <script>
+            const VerifPI=() => {
+                const Num=parseInt(prompt("Ingresar un Número Entero"));
+                if (Num % 2 === 0){
+                    document.write(`<p>El número <strong>${Num}</strong> es PAR.</p>`);
+                } else {
+                    document.write(`<p>El número <strong>${Num}</strong> es IMPAR. </p>`);
+                }
+            }
+            VerifPI();
+        </script>
+
+    </body>
+</html>
