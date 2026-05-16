@@ -1,0 +1,52 @@
+<!-- 
+  TRABAJO PRÁCTICO N°2 - EJERCICIO 18
+  Consigna: Escribir una función llamada calcularMayor y pasarle como parámetros (numero1,
+numero2). Los números son ingresados por el usuario. Dentro de la función mostrar un
+mensaje que diga cuál de los números ingresados es mayor. En caso de ser iguales,
+tendrá que indicarlo con otro mensaje.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 18 - Calcular Mayor</title>
+</head>
+<body>
+
+    <h1>Práctico de Programación Visual - Ejercicio 18</h1>
+    <div id="resultado"></div>
+
+    <script>
+       
+        const calcularMayor = (numero1, numero2) => {
+            let mensaje = "";
+
+          
+            if (numero1 > numero2) {
+                mensaje = `El primer número ingresado (${numero1}) es mayor que el segundo (${numero2}).`;
+            } else if (numero2 > numero1) {
+                mensaje = `El segundo número ingresado (${numero2}) es mayor que el primero (${numero1}).`;
+            } else {
+                mensaje = `Ambos números ingresados son iguales (${numero1} y ${numero2}).`;
+            }
+
+            document.getElementById("resultado").innerHTML = `<h2>${mensaje}</h2>`;
+        };
+
+        
+        const primerNum = parseInt(prompt("Ingrese el primer número:"));
+        const segundoNum = parseInt(prompt("Ingrese el segundo número:"));
+
+       
+        if (!isNaN(primerNum) && !isNaN(segundoNum)) {
+         
+            calcularMayor(primerNum, segundoNum);
+        } else {
+            document.getElementById("resultado").innerHTML = `
+                <h2 style="color: red;">Error: Por favor, ingrese valores numéricos válidos.</h2>
+            `;
+        }
+    </script>
+
+</body>
+</html>
