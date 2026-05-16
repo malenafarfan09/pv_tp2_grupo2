@@ -1,0 +1,56 @@
+<!-- 
+  TRABAJO PRÁCTICO N°2 - EJERCICIO 19
+  Consigna: Mostrar en una página html un párrafo de texto y un botón, aplicar estilos css.
+Crear un script que capture el evento clic del botón y que cambie el texto del párrafo
+por otro
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 19 - Manipulación de DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        .caja-ejercicio {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Práctico de Programación Visual</h1>
+    
+    <div class="caja-ejercicio">
+        <p id="textoParrafo">Este es el texto original del párrafo antes de hacer clic.</p>
+        <button id="btnCambiar">Cambiar Texto</button>
+    </div>
+
+    <script type="module" src="js/ejercicio19.js"></script>
+
+</body>
+</html>
