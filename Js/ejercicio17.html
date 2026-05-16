@@ -1,0 +1,56 @@
+<!-- 
+  TRABAJO PRÁCTICO N°2 - EJERCICIO 17
+  Consigna: Escribir una función llamada contarLetraA que reciba un string y retorne el número de
+veces que aparece la letra "a".
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 17 - Contar Letra A</title>
+</head>
+<body>
+
+    <h1>Práctico de Programación Visual - Ejercicio 17</h1>
+    <div id="resultado"></div>
+
+    <script>
+        
+        const contarLetraA = (texto) => {
+            let contador = 0; 
+
+         
+            for (let i = 0; i < texto.length; i++) {
+               
+                if (texto[i].toLowerCase() === 'a') {
+                    contador++; 
+                }
+            }
+
+            return contador;
+        };
+
+     
+        const textoUsuario = prompt("Ingrese una palabra o frase para contar las letras 'a':");
+
+      
+        if (textoUsuario !== null && textoUsuario.trim() !== "") {
+            
+          
+            const cantidadDeAs = contarLetraA(textoUsuario);
+
+           
+            document.getElementById("resultado").innerHTML = `
+                <p><strong>Texto ingresado:</strong> "${textoUsuario}"</p>
+                <h2>La letra 'a' aparece: ${cantidadDeAs} veces.</h2>
+            `;
+
+        } else {
+            document.getElementById("resultado").innerHTML = `
+                <h2 style="color: red;">Error: No se ingresó ningún texto válido.</h2>
+            `;
+        }
+    </script>
+
+</body>
+</html>
