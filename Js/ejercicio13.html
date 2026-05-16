@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio.13- Mostrar Arreglo</title>
+    </head>
+    <body>
+        <h1>Arreglo</h1>
+        <script>
+            const mostrarArreglo = (a) => {
+                document.write("<p><strong>Elementos del arreglo:</strong></p>");
+                a.forEach((num) => {document.write(`<p>${num}</p>`)  
+                });
+            };
+            const IniPro = () => {
+                const cant = parseInt( prompt("¿Cuántos números desea almacenar?"));
+                const ma = [];
+                for(let i = 0; i < cant; i++){
+                    let numero= parseInt(prompt(`Ingresar número ${i+1} de ${cant}:`))
+                    ma.push(numero);
+
+                }
+                mostrarArreglo(ma);
+            }
+            IniPro();
+            
+        </script>
+
+    </body>
+</html>
